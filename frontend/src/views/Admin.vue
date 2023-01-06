@@ -10,7 +10,12 @@
             <AdminOptionBox routeName="listUsers" iconName="users" title="Utilizadores"/>
             <AdminOptionBox routeName="listAnimals" iconName="dog"  title="Animais"/>
           </b-card-group>
+          <b-card-group deck>
+            <AdminOptionBox routeName="addSponsors" iconName="user"  title="Sponsor"/>
+            <AdminOptionBox routeName="addExperts" iconName="male"  title="Expert"/>
+          </b-card-group>
           <b-card-group deck class="mt-3">
+            
             <AdminOptionBox routeName="listQuizzes" iconName="file-alt"  title="Quizzes"/>
             <AdminOptionBox routeName="listQuestions" iconName="question-circle"  title="Questões"/>
           </b-card-group>

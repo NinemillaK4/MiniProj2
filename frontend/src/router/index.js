@@ -19,11 +19,25 @@ const routes = [
     name: "register",
     component: () => import("@/views/Register.vue")
   },
+
   {
     path: "/admin",
     name: "admin",
     component: () => import("@/views/Admin.vue")
   },
+
+  {
+    path: "/admin/sponsors/add",
+    name: "addSponsors",
+    component: () => import("@/views/sponsors/AddSponsors.vue")
+  },
+
+  {
+    path: "/admin/experts/add",
+    name: "addExperts",
+    component: () => import("@/views/experts/AddExperts.vue")
+  },
+
   {
     path: "/admin/quizzes/add",
     name: "addQuiz",
@@ -45,7 +59,7 @@ const routes = [
     component: () => import("@/views/quizzes/ListQuizzes.vue")
   },
   {
-    path: "/admin/questions/add",
+    path: "/admin/questions/add", 
     name: "addQuestion",
     component: () => import("@/views/questions/AddQuestion.vue")
   },
@@ -84,6 +98,26 @@ const routes = [
     name: "addAnimal",
     component: () => import("@/views/animals/AddAnimal.vue")
   },
+
+
+  {
+    path: "/sponsors",
+    name: "sponsors",
+    component: () => import("@/views/Sponsors.vue"),
+    meta: {
+      rule: "user"
+    },
+  },
+
+  {
+    path: "/experts",
+    name: "experts",
+    component: () => import("@/views/Experts.vue"),
+    meta: {
+      rule: "user"
+    }
+  },
+  
   {
     path: "/profile",
     name: "profile",

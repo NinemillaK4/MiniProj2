@@ -16,6 +16,12 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto mr-5">
+          <b-nav-item :to="{ name: 'sponsors' }" :disabled="!isUserLoggedIn"
+            >SPONSORS</b-nav-item
+          >
+          <b-nav-item :to="{ name: 'experts' }" :disabled="!isUserLoggedIn"
+            >EXPERTS</b-nav-item
+          >
           <b-nav-item :to="{ name: 'animals' }" :disabled="!isUserLoggedIn"
             >ANIMAIS</b-nav-item
           >
